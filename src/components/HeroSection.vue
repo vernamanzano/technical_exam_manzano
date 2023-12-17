@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center">
+  <section id="#home" class="flex items-center">
     <Carousel :autoplay="4000" :wrap-around="true" ref="carouselRef">
       <Slide v-for="(slide, index) in slides" :key="index">
         <div class="relative carousel__item mb-6">
@@ -14,13 +14,13 @@
 
           <img :src="slide.image" alt="Radiance Haven Salon Image" class="w-full object-cover" />
           <div class="flex flex-col-reverse lg:flex-col">
-            <div :id="'text-container-' + index" class="px-2 text-zucchini font-Judson font-bold italic text-2xl md:absolute lg:text-4xl xl:text-5xl" v-html="formatText(slide.text)"></div>
+            <div :id="'text-container-' + index" class="px-2 text-zucchini font-Judson font-bold italic text-xl sm:text-2xl md:absolute lg:text-4xl xl:text-5xl" v-html="formatText(slide.text)"></div>
             <Pagination class="z-10"/>
           </div>
         </div>
       </Slide>
     </Carousel>
-  </div>
+  </section>
 </template>
 
 <style>

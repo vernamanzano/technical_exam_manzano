@@ -1,52 +1,52 @@
 <template>
-    <div id="branches" class="bg-whitewash pt-10 pb-0 md:pb-24">
-        <h1 class="font-Judson text-5xl font-bold text-center text-zucchini md:text-6xl"> find your <br class="md:hidden"> nearest branch</h1>
-        <div class="container">
-          <div class="panel branch-table">
-            <div class="branch-plan">
-                <span class="branch-name">main salon</span>
-                <img src="../assets/images/branch-1.jpg" alt="" class="branch-img">
-                <h2 class="branch-address">800 Hope Street, <br> Providence, RI</h2>
-                <ul class="branch-services">
-                    <li class="branch-services-item">Hair Styling, Facials, Massage, Nails </li>
-                    <li class="branch-services-item">All Tables Available</li>
-                </ul>
-                
-                <button class="branch-book-btn">
-                    BOOK NOW!
-                </button>
-            </div>
-            
-            <div class="branch-plan">
-                <span class="branch-name">downtown spa</span>
-                <img src="../assets/images/branch-2.jpg" alt="" class="branch-img">
-                <h2 class="branch-address">120 Elm Street, <br> Providence, RI</h2>
-                <ul class="branch-services">
-                    <li class="branch-services-item">Hair Styling, Facials, Massage, Nails</li>
-                    <li class="branch-services-item">All Tables Available</li>
-                </ul>
-                
-                <button class="branch-book-btn">
-                    BOOK NOW!
-                </button>
-            </div>
-            
-            <div class="branch-plan">
-                <span class="branch-name">seaside retreat</span>
-                <img src="../assets/images/branch-3.jpg" alt="" class="branch-img">
-                <h2 class="branch-address">45 Ocean View Avenue, <br> Newport, RI</h2>
-                <ul class="branch-services">
-                    <li class="branch-services-item">Hair Styling, Facials, Massage, Nails</li>
-                    <li class="branch-services-item">All Tables Available</li>
-                </ul>
-                
-                <button class="branch-book-btn">
-                    BOOK NOW!
-                </button>
-            </div>
+    <section id="branches" class="bg-whitewash">
+      <h1 class="mt-5 font-Judson text-4xl font-bold text-center text-zucchini sm:text-5xl md:mt-0 md:text-6xl md:pt-10"> find your <br class="md:hidden"> nearest branch</h1>
+      <div class="container">
+        <div class="panel branch-table">
+          <div class="branch-plan">
+              <span class="branch-name">main salon</span>
+              <img src="../assets/images/branch-1.jpg" alt="main salon" class="branch-img">
+              <h2 class="branch-address">800 Hope Street, <br> Providence, RI</h2>
+              <ul class="branch-services">
+                  <li class="branch-services-item">Hair Styling, Facials, Massage, Nails, Spa </li>
+                  <li class="branch-services-item">All Tables Available</li>
+              </ul>
+              
+              <button class="branch-book-btn">
+                  BOOK NOW!
+              </button>
+          </div>
+          
+          <div class="branch-plan">
+              <span class="branch-name">downtown spa</span>
+              <img src="../assets/images/branch-2.jpg" alt="downtown spa" class="branch-img">
+              <h2 class="branch-address">120 Elm Street, <br> Providence, RI</h2>
+              <ul class="branch-services">
+                  <li class="branch-services-item">Hair Styling, Facials, Massage, Nails, Spa</li>
+                  <li class="branch-services-item">All Tables Available</li>
+              </ul>
+              
+              <button class="branch-book-btn">
+                  BOOK NOW!
+              </button>
+          </div>
+          
+          <div class="branch-plan">
+              <span class="branch-name">seaside retreat</span>
+              <img src="../assets/images/branch-3.jpg" alt="seaside retreat" class="branch-img">
+              <h2 class="branch-address">45 Ocean View Avenue, <br> Newport, RI</h2>
+              <ul class="branch-services">
+                  <li class="branch-services-item">Hair Styling, Facials, Massage, Nails, Spa</li>
+                  <li class="branch-services-item">All Tables Available</li>
+              </ul>
+              
+              <button class="branch-book-btn">
+                  BOOK NOW!
+              </button>
           </div>
         </div>
-    </div>
+      </div>
+    </section>
 </template>
 
 <script setup>
@@ -60,8 +60,7 @@
 
 .container {
   margin: 0 auto;
-  padding: 50px 0 0;
-  width: 100%;
+  max-width: 72rem;
 }
 
 .panel {
@@ -84,6 +83,7 @@
 @media (min-width: 1024px) {
   .branch-table {
     flex-direction: row;
+    margin: 40px 0px;
   }
 }
 
@@ -93,12 +93,15 @@
 
 .branch-plan {
   border-bottom: 2px solid rgba(127, 158, 94, 0.5);;
-  padding: 25px;
+  padding: 20px
 }
 
-@media (max-width: 768px) {
+@media (min-width: 1024px) {
   .branch-plan {
-    padding: 25px 50px;
+    border-bottom: none;
+    border-right: 2px solid rgba(127, 158, 94, 0.2);;
+    flex-basis: 100%;
+    padding: 50px;
   }
 }
 
@@ -106,14 +109,9 @@
   border-bottom: none;
 }
 
-@media (min-width: 1024px) {
-  .branch-plan {
-    border-bottom: none;
-    border-right: 1px solid rgba(127, 158, 94, 0.2);;
-    flex-basis: 100%;
-    padding: 50px;
-  }
 
+
+@media (min-width: 1024px) {
   .branch-plan:last-child {
     border-right: none;
   }
@@ -125,17 +123,11 @@ font-family: 'Judson', serif;
   display: block;
   font-size: 30px;
   font-weight: bold;
-  margin-bottom: 8px;
-}
-
-@media (max-width: 1024px) {
-  .branch-name {
-    font-size: 30px;
-  }
+  margin-bottom: 10px;
 }
 
 .branch-img {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   max-width: 100%;
   border-radius: 8px;
 }
@@ -155,22 +147,16 @@ font-family: 'Judson', serif;
   text-transform: uppercase;
 }
 
-@media (max-width: 1024px) {
-  .branch-address {
-    font-size: 16px;
-  }
-}
-
 .branch-services {
   color: #323232;
   font-weight: 600;
   letter-spacing: 1px;
-  margin: 25px;
+  margin: 20px;
 }
 
 .branch-services-item {
   border-top: 1px solid rgba(127, 158, 94, 0.2);;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   padding: 15px 0;
   text-transform: capitalize;
@@ -178,7 +164,7 @@ font-family: 'Judson', serif;
 
 @media (max-width: 1024px) {
   .branch-services-item {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 
@@ -188,16 +174,11 @@ font-family: 'Judson', serif;
 .branch-book-btn {
     font-weight: bold;
     border-bottom: solid 2px #323232;
+    margin-bottom: 10px;
 }
 
 .branch-book-btn:hover {
     color: #1A422B;
     border-bottom: solid 2px #1A422B;
-}
-
-@media (max-width: 1024px) {
-  .branch-book-btn {
-    margin-bottom: 15px;
-  }
 }
 </style>

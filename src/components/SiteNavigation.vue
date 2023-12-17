@@ -1,15 +1,15 @@
 <template>
-    <header class="hidden z-10 sticky top-0 shadow-md px-8 items-center justify-between bg-whitewash font-Mulish lg:flex">
+    <nav class="hidden z-10 sticky top-0 shadow-md px-8 items-center justify-between bg-whitewash font-Mulish lg:flex">
         <div class="w-1/3 italic font-Judson xl:text-xl">
             800 Hope Street, <br>
             Providence, RI 
         </div>
         <div class="w-1/3">
             <div>
-                <img class="w-80 mx-auto" src="../assets/images/radiance-haven.png" alt="Radiance Haven Logo">
+                <a href="/"><img class="w-80 mx-auto" src="../assets/images/radiance-haven.png" alt="Radiance Haven Logo"></a>
             </div>
             <ul class="mx-auto flex items-center justify-center font-light my-4">
-                <li><a href="/" class="border-b-2 border-transparent hover:text-zucchini hover:border-zucchini sm:mx-6">HOME</a></li>
+                <li><a href="#home" class="border-b-2 border-transparent hover:text-zucchini hover:border-zucchini sm:mx-6">HOME</a></li>
                 <li><a href="#services" class="border-b-2 border-transparent hover:text-zucchini hover:border-zucchini sm:mx-6">SERVICES</a></li>
                 <li><a href="#about" class="border-b-2 border-transparent hover:text-zucchini hover:border-zucchini sm:mx-6">ABOUT</a></li>
                 <li><a href="#contact" class="border-b-2 border-transparent hover:text-zucchini hover:border-zucchini sm:mx-6">CONTACT</a></li>
@@ -21,24 +21,24 @@
                 <span class="xl:text-xl">401-331-1115</span>
             </button>
         </div>
-    </header>
+    </nav>
 
-    <nav class="z-10 sticky top-0 bg-whitewash shadow-md px-6 py-4 mx-auto lg:hidden lg:justify-between lg:items-center">
-        <div class="flex items-center justify-between">
-            <img class="w-80 mx-auto" src="../assets/images/radiance-haven.png" alt="Radiance Haven Logo">
+    <nav class="z-10 sticky top-0 bg-whitewash shadow-md px-5 py-4 mx-auto lg:hidden lg:justify-between lg:items-center">
+        <div class="flex items-center justify-center relative">
+            <a href="/"><img class="w-56 sm:w-80 mx-auto" src="../assets/images/radiance-haven.png" alt="Radiance Haven Logo"></a>
             <!-- Mobile menu button -->
-            <div @click="toggleNav" class="flex lg:hidden">
-            <button type="button" class="text-darkcharcoal hover:text-gray-400 focus:outline-none focus:text-gray-400">
-                <svg viewBox="0 0 24 24" class="w-6 h-6">
-                <path
-                    fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" fill="#1A422B">
-                </path>
-                </svg>
-            </button>
+            <div @click="toggleNav" class="absolute right-0 top-1/3 lg:hidden">
+                <button type="button" class="text-darkcharcoal hover:text-gray-400 focus:outline-none focus:text-gray-400">
+                    <svg viewBox="0 0 24 24" class="w-6 h-6">
+                    <path
+                        fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" fill="#1A422B">
+                    </path>
+                    </svg>
+                </button>
             </div>
         </div>
         <ul :class="showMenu ? 'flex' : 'hidden'" class="flex-col mt-8 space-y-2 text-center font-light text-xl lg:flex lg:space-y-0 lg:flex-row lg:items-center lg:space-x-10 lg:mt-0">
-            <li><a @click="toggleNav" href="/" class="border-b-2 border-transparent hover:text-zucchini hover:border-zucchini sm:mx-6">HOME</a></li>
+            <li><a @click="toggleNav" href="#home" class="border-b-2 border-transparent hover:text-zucchini hover:border-zucchini sm:mx-6">HOME</a></li>
             <li><a @click="toggleNav" href="#services" class="border-b-2 border-transparent hover:text-zucchini hover:border-zucchini sm:mx-6">SERVICES</a></li>
             <li><a @click="toggleNav" href="#about" class="border-b-2 border-transparent hover:text-zucchini hover:border-zucchini sm:mx-6">ABOUT</a></li>
             <li><a @click="toggleNav" href="#contact" class="border-b-2 border-transparent hover:text-zucchini hover:border-zucchini sm:mx-6">CONTACT</a></li>
@@ -46,13 +46,14 @@
     </nav>
 </template>
 <script setup>
-import { ref } from 'vue';
+import { ref, getCurrentInstance } from 'vue';
 
 let showMenu = ref(false);
 
 const toggleNav = () => {
   showMenu.value = !showMenu.value;
 };
+
 </script>
 
 

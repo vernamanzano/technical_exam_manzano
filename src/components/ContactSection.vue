@@ -1,17 +1,17 @@
 <template>
-    <div id="contact" class="py-10 px-10 gap-24 bg-gingko/30 text-darkcharcoal md:py-20 lg:pt-10">
-        <div class="w-10/12 mx-auto lg:w-11/12">
-            <h1 class="mb-5 font-Judson text-5xl font-bold text-center text-zucchini md:text-6xl md:text-start"> come visit us!</h1>
-            <div class="flex flex-col gap-10 lg:flex-row lg:gap-10 xl:gap-10">
+    <section id="contact" class="p-5 bg-gingko/30 text-darkcharcoal sm:p-10">
+        <div class="max-w-6xl mx-auto">
+            <h1 class="font-Judson text-4xl font-bold text-center text-zucchini sm:text-5xl md:text-6xl"> come visit us!</h1>
+            <div class="flex flex-col gap-5 sm:gap-10 md:gap-0 lg:flex-row lg:items-start lg:gap-10 xl:flex-row">
                 <iframe src="https://maps.google.com/maps?q=800+Hope+Street%2C+Providence%2C+RI&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                class="left-0 top-0 h-96 w-full max-w-full rounded lg:w-1/2 xl:w-4/5" frameborder="0" allowfullscreen>
+                class="left-0 top-0 w-full my-5 sm:my-10 md:h-96 lg:w-2/3 xl:w-8/12" frameborder="0" allowfullscreen>
                 </iframe>
-                <div class="flex flex-col justify-between lg:w-1/2">
-                    <div class="flex flex-col gap-5 md:flex-row md:gap-20">
-                        <div>
-                            <div class="font-Judson font-semibold text-zucchini text-3xl pb-3 text-center md:text-start">business hours</div>
+                <div class="flex flex-col">
+                    <div class="flex flex-col justify-center gap-5 sm:flex-row sm:justify-start sm:gap-10 sm:mb-20 lg:flex-col lg:gap-5 lg:mt-10">
+                        <div class="mx-10 md:mx-0">
+                            <div class="font-Judson font-semibold text-zucchini text-3xl text-center lg:text-start">business hours</div>
                             <div class="flex justify-center">
-                                <table class="w-full mx-24 md:mx-0">
+                                <table class="w-full">
                                     <tr>
                                         <td>Tuesday</td>
                                         <td class="text-end">10-8</td>
@@ -35,25 +35,28 @@
                                 </table>
                             </div>
                         </div>
-                        <div class="text-center md:text-start">
-                            <div class="font-Judson font-semibold text-zucchini text-3xl pb-3.5">address</div>
-                            <p>
-                                800 Hope Street, <br class="hidden lg:block">
-                                Providence, RI <br>
-                                401-331-1115 
-                            </p>
+                        <div class="flex flex-col justify-between lg:gap-4">
+                            <div class="text-center sm:text-start">
+                                <div class="font-Judson font-semibold text-zucchini text-3xl">address</div>
+                                <p>
+                                    800 Hope Street, <br class="sm:hidden lg:block">
+                                    Providence, RI <br>
+                                    401-331-1115 
+                                </p>
+                            </div>
+                            <div class="mt-10 mb-20 sm:mt-0 sm:mb-0">
+                                <p class="text-center text-xs sm:text-start">
+                                    ©2023 Radiance Haven. <br class="lg:hidden"> All Rights Reserved. <br>
+                                    Website maintained and designed by <br class="sm:hidden lg:block"> Vernalyn Manzano
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="my-10 md:my-0">
-                        <p class="text-center text-xs md:text-end">
-                            ©2023 Akari Salon & Spa. All Rights Reserved. <br>
-                            Website maintained and designed by Vernalyn Manzano
-                        </p>
-                    </div>
+                    
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <script setup>
