@@ -1,17 +1,17 @@
 <template>
-  <section id="testimonials" class="bg-whitewash">
-    <div class="max-w-6xl p-10 mx-auto text-center md:py-20">
-      <h1 class="font-Judson text-5xl font-bold text-center text-zucchini md:text-6xl">
+  <section id="testimonials" class="bg-whitewash p-5 md:p-10">
+    <div class="max-w-6xl mx-auto text-center">
+      <h1 class="font-Judson text-4xl font-bold text-center text-zucchini sm:text-5xl md:text-6xl">
         what our <br> customers say...
       </h1>
       <!-- Testimonials Container -->
-      <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
+      <div class="flex flex-col mt-20 md:flex-row md:space-x-5">
         <!-- Testimonial 1 -->
-        <div class="flex flex-col items-center p-6 rounded-lg bg-whitewash shadow-md md:w-1/3">
+        <div class="flex flex-col items-center p-5 rounded-lg bg-whitewash shadow-md md:w-1/3">
           <img src="../assets/images/avatar-anisha.png" class="w-20 -mt-14" alt="" />
-          <h2 class="mt-4 text-lg font-bold">Anisha Li</h2>
-          <h3 class=""> Model </h3>
-          <p class="my-8 text-sm text-darkcharcoal italic">
+          <h2 class="mt-5 text-lg font-bold">Anisha Li</h2>
+          <h3> Model </h3>
+          <p class="my-10 text-sm text-darkcharcoal italic">
             "Radiance Haven is a hidden gem! The ambiance is so soothing, and the staff is incredibly skilled. I had a rejuvenating facial that left my skin glowing."
           </p>
           <div class="flex">
@@ -20,11 +20,11 @@
         </div>
 
         <!-- Testimonial 2 -->
-        <div class="hidden flex-col items-center p-6 rounded-lg bg-whitewash shadow-md md:flex md:w-1/3">
+        <div class="hidden flex-col items-center p-5 rounded-lg bg-whitewash shadow-md md:flex md:w-1/3">
           <img src="../assets/images/avatar-ali.png" class="w-20 -mt-14" alt="" />
-          <h2 class="mt-4 text-lg font-bold">Ali Bravo</h2>
-          <h3 class=""> Fashion Designer </h3>
-          <p class="my-8 text-sm text-darkcharcoal italic">
+          <h2 class="mt-5 text-lg font-bold">Ali Bravo</h2>
+          <h3> Fashion Designer </h3>
+          <p class="my-10 text-sm text-darkcharcoal italic">
             "Absolutely love Radiance Haven! The hairstylists here are true artists. They transformed my hair into a work of art, and I left feeling like a million bucks. The attention to detail is unmatched!"
           </p>
           <div class="flex">
@@ -33,11 +33,11 @@
         </div>
 
         <!-- Testimonial 3 -->
-        <div class="hidden flex-col items-center p-6 rounded-lg bg-whitewash shadow-md md:flex md:w-1/3">
+        <div class="hidden flex-col items-center p-5 rounded-lg bg-whitewash shadow-md md:flex md:w-1/3">
           <img src="../assets/images/avatar-shanai.png" class="w-20 -mt-14" alt="" />
-          <h2 class="mt-4 text-lg font-bold">Shanai Watts</h2>
-          <h3 class=""> Teen Actress </h3>
-          <p class="my-8 text-sm text-darkcharcoal italic">
+          <h2 class="mt-5 text-lg font-bold">Shanai Watts</h2>
+          <h3> Teen Actress </h3>
+          <p class="my-10 text-sm text-darkcharcoal italic">
             "Radiance Haven is my go-to place for self-care. The massages are heavenly, and the entire team is friendly and professional. It's my little oasis in the city. Highly recommend!"
           </p>
           <div class="flex">
