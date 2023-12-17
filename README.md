@@ -1,10 +1,10 @@
 # technical_exam_manzano
+This project is a solution to a technical examination.
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Requirements
+- Node.js v18 or later version
+- NPM v9 or later version
+- VS Code or any code editor
 
 ## Customize configuration
 
@@ -27,3 +27,19 @@ npm run dev
 ```sh
 npm run build
 ```
+<br /><br />
+
+### ❌ Missing Dependency Error (ts-interface-checker error)
+- If you encountered a missing dependency error, try installing this package.
+```sh
+npm install ts-interface-checker --save-dev
+```
+- Try running the project again.
+```sh
+npm run dev
+```
+
+
+
+
+
