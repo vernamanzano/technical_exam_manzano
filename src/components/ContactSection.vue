@@ -4,11 +4,11 @@
             <h1 class="font-Judson text-4xl font-bold text-center text-zucchini sm:text-5xl md:text-6xl"> come visit us!</h1>
             <div class="flex flex-col gap-5 sm:gap-10 md:gap-0 lg:flex-row lg:items-start lg:gap-10 xl:flex-row">
                 <iframe src="https://maps.google.com/maps?q=800+Hope+Street%2C+Providence%2C+RI&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                class="left-0 top-0 w-full my-5 sm:my-10 md:h-96 lg:w-2/3 xl:w-8/12" frameborder="0" allowfullscreen>
+                class="left-0 top-0 w-full h-96 my-5 sm:my-10 lg:w-2/3 xl:w-8/12" frameborder="0" allowfullscreen>
                 </iframe>
                 <div class="flex flex-col">
                     <div class="flex flex-col justify-center gap-5 sm:flex-row sm:justify-start sm:gap-10 sm:mb-20 lg:flex-col lg:gap-5 lg:mt-10">
-                        <div class="mx-10 md:mx-0">
+                        <div class="mx-auto sm:mx-0">
                             <div class="font-Judson font-semibold text-zucchini text-3xl text-center lg:text-start">business hours</div>
                             <div class="flex justify-center">
                                 <table class="w-full">
