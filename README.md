@@ -39,6 +39,12 @@ npm install ts-interface-checker --save-dev
 npm run dev
 ```
 
+<br /><br />
+### 📷 Screenshots from the web application
+![screencapture-radiancehaven-vercel-app-2023-12-18-01_07_32](https://github.com/vernamanzano/technical_exam_manzano/assets/105500508/b7a725d6-ebf2-4af8-b42b-8ad1b498238e)
+
+
+
 
 
 
